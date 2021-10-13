@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></EditText>
+
+<EditText
+    android:id="@+id/etElement"
+    android:layout_width="0dp"
+    android:layout_height="48dp"
+    android:layout_marginTop="8dp"
+    android:hint="Element"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/etName"></EditText>
+<EditText
+    android:id="@+id/etWeapon"
+    android:layout_width="0dp"
+    android:layout_height="48dp"
+    android:hint="Weapon"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/etElement"></EditText>
+<EditText
+    android:id="@+id/etRegion"
+    android:layout_width="0dp"
+    android:layout_height="48dp"
+    android:hint="Region"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/etWeapon"></EditText>
+<Button
+    android:id="@+id/btnAdd"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Add"
+    app:layout_constraintEnd_toStartOf="@+id/btnClear"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/etRegion"></Button>
+
+<Button
+    android:id="@+id/btnClear"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+
+    android:text="Clear"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/btnAdd"
+    app:layout_constraintTop_toBottomOf="@+id/etRegion"></Button>
+
+
+<TableLayout
+    android:id="@+id/dpOutput"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btnAdd">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
